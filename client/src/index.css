@@ -15,6 +15,7 @@ body {
   
   .status {
     margin-bottom: 10px;
+    margin-left: 10px;
   }
   
   .square {
@@ -42,10 +43,113 @@ body {
   
   .game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .play-area{
+    display: flex;
+    flex-direction: row; 
   }
   
   .game-info {
     margin-left: 20px;
   }
-  
+
+  .winModal{
+      position: absolute;
+      left: 50xp;
+      background:goldenrod;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20%/50%;
+      padding: 20px 60px ;
+      width:fit-content;
+  }
+  .winnerInput{
+      height: 100px;
+      color:white;
+      font-weight: 700;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around ;
+      
+     
+  }
+  .winnerInput>input{
+       width: 200px;
+       background:indigo;
+       color: rgb(255, 234, 116);
+       font-family: serif;
+       font-size: 1.2em;
+  }
+  .winnerInput>button{
+       width: 200px;
+       background:purple;
+       border-color: indigo;
+       color: gold;
+       border-radius: 5% / 50%;
+       font-weight: 700;
+  }
+  .chicken{
+    width:fit-content;
+}
+.HOF{
+    background-color: gold;
+    border: 20px outset;
+    border-color:  rgb(112, 73, 54)  rgb(149, 98, 73) rgb(151, 100, 75)  rgb(100, 65, 48);
+    color: rgb(112, 95, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20vw;
+    height: 60vh;
+    width: 60vh;
+    overflow: auto;
+    padding:10px;
+    background-image:
+    linear-gradient(110deg,
+    rgba(0,0,0,.3) 15%,
+    rgba(247, 247, 247, 0.5)  60%,
+    rgba(0,0,0,.2) 90%);
+    text-align: center;
+}
+.HOF>h1{
+    text-shadow: 2px 1px rgba(65, 40, 0, 1);
+       font-family: serif;
+      font-size: 3em;
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+        }
+    .HOF>hr{
+        color:rgb(75, 64, 0);
+        border-color:rgb(119, 101, 1);
+        width: 85% ;
+        }
+    .HOF>p{
+        font-weight:400;
+    }
+    .HOF>table{
+        border-collapse:collapse;
+    }
+    th{
+        font-weight: 800 ;
+        border-bottom: 1px solid rgb(119, 101, 1);
+    }
+    td {
+        border-bottom: 1px solid rgb(119, 101, 1);
+
+    }
+    tr:hover{
+        background-color:rgba(255,255,255,0.2);
+    }
+    tfoot td{
+        width: 0%;
+    }
+    .buttonHOF{
+        font-weight:600;
+        color: gold;
+        background-color: indigo;
+        border-radius: 3%/30%;;
+    }
